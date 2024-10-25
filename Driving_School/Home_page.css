@@ -1,0 +1,436 @@
+/*common style start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+:root {
+    --themeRed: #e43a47;
+    --gray: #efefef;
+}
+
+button,
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullcontainer {
+    width: 100%;
+}
+
+.container {
+    
+    margin: auto;
+    padding-left: 20px;
+}
+
+.sectiontitle {
+    width: 500px;
+    border-bottom: 3px solid var(--themeRed);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 10px;
+    position: relative;
+    padding : 30px 0;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.sectiontitle::after {
+    display: inline;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeRed);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: static;
+}
+
+/*common style end here */
+/*home style start*/
+
+header {
+    width: 100%;
+    background-color: rgba(0, 74, 158, 0.692);
+    position: fixed;
+    z-index: 2;
+    height: 75px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a img{
+    float: inline-start;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 30px;
+    height: 55px;
+    width: 65px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+header nav a img:hover{
+    margin-top: 7px;
+    margin-left: 30px;
+    width: 70px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.692)
+}
+
+header nav ul {
+    list-style-type: none;
+    float: right;
+}
+
+header nav ul li {
+    display:inline;
+    width: 110px;
+    height: 75px;
+}
+
+header nav ul li a {
+    margin-top: 8px;
+    display: inline-block;
+    line-height: 60px;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: rgba(29, 2, 2, 0.623)
+}
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 2, 9, 0.479),
+            rgba(0, 0, 0, 0.678)), url(Home_page_images/7779606.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner h1 {
+    margin-top: 400px;
+    display: inline-block;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 80%;
+    line-height: 4rem;
+    font-weight: bold;
+}
+
+.banner p {
+    color: #fff;
+    width: 95%;
+    text-shadow: 0 0 5px #000;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+
+/*home style end here*/
+/*photos starts here*/
+#_photos{
+    width: 100%;
+}
+
+main{
+   
+    min-width: 300px;
+    width:100%;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    padding:100px 50px;
+ 
+}
+
+main .card{
+    box-shadow: 7px 12px   rgba(0, 74, 158, 0.692);   
+    flex: 1 1 210px;
+    text-align: center;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 300px;
+    height:fit-content;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 20px;
+    overflow: hidden;
+    background-color: rgba(214, 181, 157, 0.653);
+}
+
+
+main .card .image img{
+    height: 400px;
+    border-radius: 10px;
+}
+
+main .seemore
+{
+    width: 100%;
+    text-align: center;
+    
+}
+main a button
+{
+    margin: 20px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-weight: bolder;
+    background-color: rgba(0, 74, 158, 0.692);
+    color: #fff;
+}
+
+
+
+/*program section start here */
+.programs {
+    background-color: rgba(73, 151, 224, 0.692);
+}
+
+.programs .boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    margin: 50px;
+}
+
+.programs .boxcontainer .box {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 3px #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+    
+}
+
+.programs .boxcontainer .box .cardimage {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.programs .boxcontainer .box .cardimage:after {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.programs .boxcontainer .box:nth-child(1) .cardimage,
+.programs .boxcontainer .box:nth-child(1) .cardimage::after {
+    background-image: url("Home_page_images/168.jpg");
+}
+
+.programs .boxcontainer .box:nth-child(2) .cardimage,
+.programs .boxcontainer .box:nth-child(2) .cardimage::after {
+    background-image: url("Home_page_images/7649997.jpg");
+}
+
+.programs .boxcontainer .box:nth-child(3) .cardimage,
+.programs .boxcontainer .box:nth-child(3) .cardimage::after {
+    background-image: url("Home_page_images/17758.jpg");
+}
+
+.programs .boxcontainer .box:nth-child(4) .cardimage,
+.programs .boxcontainer .box:nth-child(4) .cardimage::after {
+    background-image: url("Home_page_images/7270427.jpg");
+}
+
+.programs .boxcontainer .box:hover .cardimage::after {
+    top: 100%;
+}
+
+.programs .boxcontainer .box .programtitle {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/*program section end here */
+
+
+/* apply starts here*/
+#apply
+{
+    margin-top: 30px;
+    padding-top: 60px;
+    height: 750px;
+}
+#apply .cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    margin: 30px auto;
+
+}
+
+#apply .cards>div {
+    width: 280px;
+    background-color: rgba(50, 133, 211, 0.692);;
+    padding: 35px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+    height: 350px;
+    border: 3px solid #004dc0ad;
+    margin: 30px;
+    font-weight: bold;
+}
+
+#apply .cards>div:hover {
+   
+    border-color: #004dc0ad;
+    height: auto;
+}
+
+#apply .cards>div .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#apply .cards>div p {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 90px;
+
+}
+
+#apply .cards>div a button {
+    border: 1px solid #004dc0ad;
+    outline: none;
+    width: 100px;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    background-color: #fff;
+
+
+}
+
+#apply .cards>div:hover button {
+    background-color: #004dc0ad;
+    color: #fff;
+    width: 120px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+/*about starts here*/
+#aboutsection
+{
+    background-color: rgba(73, 151, 224, 0.692);
+    margin-top: -50px;
+}
+#aboutsection .container p{
+    margin : 70px 40px;
+    text-align: justify;
+}
+/*about section end here */
+
+/*footer section start here*/
+
+footer{
+    background-color: rgba(0, 62, 133, 0.89);
+    color:#e1e1e1;
+    padding: 60px 0;
+    font-size: 14px;
+    height: 600px;
+    justify-content: center;
+
+}
+footer .container{
+    margin: 80px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+footer .title{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+}
+footer p{
+    margin-bottom: 10px;
+}
+
+footer .linkscontainer ul{
+    list-style-type: circle;
+    padding-left: 30px;
+}
+footer .linkscontainer ul li a{
+    text-decoration: none;
+    color: #ececec;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .connectcontainer p{
+    padding-left: 20px;
+}
+
+/*footer section start here*/

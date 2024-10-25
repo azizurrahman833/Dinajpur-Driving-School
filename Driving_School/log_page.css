@@ -1,0 +1,125 @@
+body
+{
+    margin: 20px;
+    padding: 0;
+    font-family: montserrat;
+    background-image: linear-gradient(rgba(0, 9, 6, 0.171),
+            rgba(1, 0, 25, 0.946)), url(Home_page_images/56.jpg);
+            background-size: 300px;
+            background-repeat: repeat;
+            background-attachment:fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center
+{
+    border: 3px solid #004dc0ad;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: rgba(0, 85, 165, 0.692);  
+    border-radius: 15px;
+    padding: 0px 10px;
+    
+}
+
+.center h1
+{
+    text-align: center;
+    padding: 0 0 0 10px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px #000000;
+    padding-bottom: 20px;
+     
+}
+
+.center label
+{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px #000000;
+}
+
+.center form
+{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.notmember_text
+{
+    font-size: 20px ;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+#user_type
+{
+    border-radius: 5px;
+}
+
+.already_member_text
+{
+    font-size: 20px ;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+.name_text input , .password_text input, .user_mail input
+{
+    width : 100%;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: rgba(225, 225, 225, 0.587);
+}
+
+.name_text input::placeholder , .password_text input::placeholder, .user_mail input::placeholder
+{
+    color: BLACK;
+}
+
+.notmember_text a button,
+.already_member_text a button
+{
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(90, 90, 223, 0.485);
+    font-weight:bold;
+    font-size: 15px;
+}
+
+.center .user_specification select
+{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    float: right;
+    background-color: rgba(225, 225, 225, 0.587);
+    
+}
+
+.submit_text
+{
+    text-align: right;
+    
+}
+
+.submit_text input
+{
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(90, 90, 223, 0.485);
+    font-weight:bold;
+    font-size: 15px;
+    padding: 5px 10px;
+}
+

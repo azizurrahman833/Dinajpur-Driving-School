@@ -1,0 +1,228 @@
+/*common style start */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+:root {
+    --themeRed: #e43a47;
+    --gray: #efefef;
+}
+
+button,
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.fullcontainer {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.sectiontitle {
+    width: 500px;
+    border-bottom: 3px solid var(--themeRed);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding : 30px 20px;
+    text-transform: uppercase;
+}
+
+.sectiontitle::after {
+    display: inline;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeRed);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+
+section {
+    padding: 20px 0;
+    position: relative;
+}
+
+/*common style end here */
+#apply
+{
+    margin-top: 30px;
+    padding-top: 60px;
+    height: 600px;
+}
+#apply .cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    margin: 30px auto;
+
+}
+
+#apply .cards>div {
+    width: 280px;
+    background-color: rgba(50, 133, 211, 0.692);;
+    padding: 35px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 15px;
+    height: 350px;
+    border: 3px solid #004dc0ad;
+    margin: 30px;
+    font-weight: bold;
+}
+
+#apply .cards>div:hover {
+   
+    border-color: #004dc0ad;
+    height: auto;
+}
+
+#apply .cards>div .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#apply .cards>div p {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 90px;
+
+}
+
+#apply .cards>div a button {
+    border: 1px solid #004dc0ad;
+    outline: none;
+    width: 100px;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    background-color: #fff;
+
+
+}
+
+#apply .cards>div:hover button {
+    background-color: #004dc0ad;
+    color: #fff;
+    width: 120px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.content-table
+{
+    width: 95%;
+    border-collapse: collapse;
+    margin: 0px 0;
+    font-size: .25cm;
+    margin: 0 auto;
+    border-radius: 7.5px;
+    overflow: scroll;
+    box-shadow:0 0 20px rgba(0,0,0,.15);
+    table-layout:fixed;
+    
+}
+
+.content-table thead tr 
+{
+    background-color: #004dc0ad;
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+    
+
+}
+
+
+.content-table th,
+.content-table td 
+{
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    word-wrap: break-word;
+    padding: 15px 10px;
+    font-size: 12px;
+}
+.content-table th
+{
+    font-weight: bold;
+}
+.content-table th button,
+.content-table td button
+{
+    padding: 5px 15px;
+    border-radius: 5px;
+    width: 60px;
+}
+
+.content-table th button:hover,
+.content-table td button:hover
+{
+    background-color: #004dc0ad;
+    color: #ffffff;
+    font-size: bold;
+    width: 60px;
+}
+
+.content-table tbody tr
+{
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even)
+{
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type
+{
+    border-bottom: 2px solid #004dc0ad;
+}
+
+/*donors information end here */
+
+#add_photo .addphotos
+{
+    width: 100%;
+    text-align: center;
+}
+#add_photo a button
+{
+    margin: 20px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 7px;
+    font-weight: bolder;
+    background-color: #004dc0ad;
+    color: #fff;
+}
